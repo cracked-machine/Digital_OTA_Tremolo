@@ -284,12 +284,12 @@ Wire Wire Line
 $Comp
 L Digital_OTA_Tremolo-rescue:R R?
 U 1 1 5AD2DE34
-P 6200 3800
-F 0 "R?" V 6280 3800 50  0000 C CNN
-F 1 "33K" V 6200 3800 50  0000 C CNN
-F 2 "" V 6130 3800 50  0001 C CNN
-F 3 "" H 6200 3800 50  0001 C CNN
-	1    6200 3800
+P 5825 3800
+F 0 "R?" V 5905 3800 50  0000 C CNN
+F 1 "4K7" V 5825 3800 50  0000 C CNN
+F 2 "" V 5755 3800 50  0001 C CNN
+F 3 "" H 5825 3800 50  0001 C CNN
+	1    5825 3800
 	0    1    1    0   
 $EndComp
 Connection ~ 5400 3800
@@ -312,7 +312,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 3500 11450 3500
 Wire Wire Line
-	5400 3800 6050 3800
+	5400 3800 5675 3800
 $Comp
 L Device:R_POT_TRIM RV?
 U 1 1 5E7397F7
@@ -523,7 +523,7 @@ Connection ~ 9550 3500
 Wire Wire Line
 	9550 3500 9900 3500
 Wire Wire Line
-	8825 3500 9550 3500
+	8825 3500 9275 3500
 Wire Wire Line
 	10200 3800 10200 3975
 $Comp
@@ -627,9 +627,6 @@ F 3 "" H 7575 3450 50  0001 C CNN
 	1    7575 3450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6350 3800 6900 3800
-Connection ~ 6900 3800
 $Comp
 L Device:D D?
 U 1 1 5E8769B9
@@ -643,8 +640,6 @@ F 3 "~" H 11600 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11750 3500 12300 3500
-Wire Wire Line
-	8825 3600 9025 3600
 $Comp
 L MCU_ST_STM32F0:STM32F051K8Tx U?
 U 1 1 5E72F809
@@ -657,12 +652,8 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4525 6875 9025 6875
-Wire Wire Line
-	9025 6875 9025 3600
-Text Label 6025 6875 0    50   ~ 0
-DAC1
-Text Notes 6025 6975 0    50   ~ 0
+	4525 6875 5500 6875
+Text Notes 4650 6975 0    50   ~ 0
 SINE WAVE < 30Hz\n
 $Comp
 L Device:Rotary_Encoder SW?
@@ -730,4 +721,62 @@ F 3 "~" H 6525 7725 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6525 7575 6525 7275
+Wire Wire Line
+	6900 3200 6175 3200
+Wire Wire Line
+	6175 3200 6175 3800
+Wire Wire Line
+	6175 3800 5975 3800
+Connection ~ 6900 3200
+Wire Wire Line
+	8825 3600 9075 3600
+Text Label 9075 3600 2    50   ~ 0
+CV
+Text Label 6475 6875 2    50   ~ 0
+CV
+Wire Wire Line
+	9275 3500 9275 4350
+Wire Wire Line
+	9275 4350 8850 4350
+Wire Wire Line
+	8100 4350 8100 3800
+Connection ~ 9275 3500
+Wire Wire Line
+	9275 3500 9550 3500
+Connection ~ 8100 3800
+$Comp
+L Device:R R?
+U 1 1 5E90DE19
+P 8700 4350
+F 0 "R?" V 8493 4350 50  0000 C CNN
+F 1 "10K" V 8584 4350 50  0000 C CNN
+F 2 "" V 8630 4350 50  0001 C CNN
+F 3 "~" H 8700 4350 50  0001 C CNN
+	1    8700 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8550 4350 8100 4350
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5E9351EC
+P 5875 6875
+F 0 "RV?" V 5760 6875 50  0000 C CNN
+F 1 "47K" V 5669 6875 50  0000 C CNN
+F 2 "" H 5875 6875 50  0001 C CNN
+F 3 "~" H 5875 6875 50  0001 C CNN
+	1    5875 6875
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6025 6875 6475 6875
+Wire Wire Line
+	5875 6725 5875 6675
+Wire Wire Line
+	5875 6675 5500 6675
+Wire Wire Line
+	5500 6675 5500 6875
+Connection ~ 5500 6875
+Wire Wire Line
+	5500 6875 5725 6875
 $EndSCHEMATC
