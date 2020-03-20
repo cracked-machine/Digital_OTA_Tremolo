@@ -1,6 +1,4 @@
 (sym_lib_table
-  (lib (name Digital_OTA_Tremolo-rescue)(type Legacy)(uri ${KIPRJMOD}/Digital_OTA_Tremolo-rescue.lib)(options "")(descr ""))
-  (lib (name _TC7662b)(type Legacy)(uri ${KIPRJMOD}/lib/_TC7662b.lib)(options "")(descr ""))
   (lib (name barrel_jack)(type Legacy)(uri ${KIPRJMOD}/lib/barrel_jack.lib)(options "")(descr ""))
   (lib (name socket_custom)(type Legacy)(uri ${KIPRJMOD}/lib/socket_custom.lib)(options "")(descr ""))
   (lib (name pot_numbered)(type Legacy)(uri ${KIPRJMOD}/lib/pot_numbered.lib)(options "")(descr ""))
