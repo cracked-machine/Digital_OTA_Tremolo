@@ -1,0 +1,295 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L _TC7662b:_TC7662B U?
+U 1 1 5E87576B
+P 3450 4025
+F 0 "U?" H 3450 4475 60  0000 C CNN
+F 1 "_TC7662B" H 3425 4375 60  0000 C CNN
+F 2 "" H 3450 4025 60  0001 C CNN
+F 3 "" H 3450 4025 60  0001 C CNN
+	1    3450 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Digital_OTA_Tremolo-rescue:D_Schottky D?
+U 1 1 5E875777
+P 1875 3800
+F 0 "D?" H 1875 3900 50  0000 C CNN
+F 1 "D_Schottky" H 1875 3700 50  0000 C CNN
+F 2 "" H 1875 3800 50  0001 C CNN
+F 3 "" H 1875 3800 50  0001 C CNN
+	1    1875 3800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Digital_OTA_Tremolo-rescue:CP C?
+U 1 1 5E87577E
+P 2225 4100
+F 0 "C?" H 2250 4200 50  0000 L CNN
+F 1 "CP" H 2250 4000 50  0000 L CNN
+F 2 "" H 2263 3950 50  0001 C CNN
+F 3 "" H 2225 4100 50  0001 C CNN
+	1    2225 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3950 3950
+NoConn ~ 3950 4100
+$Comp
+L Digital_OTA_Tremolo-rescue:CP C?
+U 1 1 5E875786
+P 4100 4550
+F 0 "C?" H 4125 4650 50  0000 L CNN
+F 1 "CP" H 4125 4450 50  0000 L CNN
+F 2 "" H 4138 4400 50  0001 C CNN
+F 3 "" H 4100 4550 50  0001 C CNN
+	1    4100 4550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2025 3800 2775 3800
+Wire Wire Line
+	2775 3800 2775 3400
+Wire Wire Line
+	2775 3400 4150 3400
+Wire Wire Line
+	4150 3400 4150 3800
+Wire Wire Line
+	4150 3800 3950 3800
+Connection ~ 2775 3800
+Wire Wire Line
+	2225 3950 2950 3950
+Wire Wire Line
+	2225 4250 2950 4250
+Wire Wire Line
+	2950 4100 2650 4100
+Wire Wire Line
+	2650 4100 2650 4950
+Wire Wire Line
+	4100 4400 4100 4250
+Wire Wire Line
+	3950 4250 4100 4250
+Wire Wire Line
+	4100 4700 4100 4950
+Connection ~ 4100 4250
+Connection ~ 4150 3400
+Wire Wire Line
+	6900 3600 6900 3575
+Wire Wire Line
+	6900 4200 6900 4250
+Wire Wire Line
+	2775 3800 2950 3800
+Wire Wire Line
+	4100 4250 4425 4250
+Wire Wire Line
+	4150 3400 4425 3400
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E8757A1
+P 4100 4950
+F 0 "#PWR?" H 4100 4700 50  0001 C CNN
+F 1 "GNDS" H 4105 4777 50  0000 C CNN
+F 2 "" H 4100 4950 50  0001 C CNN
+F 3 "" H 4100 4950 50  0001 C CNN
+	1    4100 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E8757A7
+P 2650 4950
+F 0 "#PWR?" H 2650 4700 50  0001 C CNN
+F 1 "GNDS" H 2655 4777 50  0000 C CNN
+F 2 "" H 2650 4950 50  0001 C CNN
+F 3 "" H 2650 4950 50  0001 C CNN
+	1    2650 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 3275 4425 3400
+Wire Wire Line
+	4425 4250 4425 4425
+$Comp
+L Amplifier_Operational:TL072 U?
+U 3 1 5E8757CE
+P 7000 3900
+F 0 "U?" H 6958 3946 50  0000 L CNN
+F 1 "TL072" H 6958 3855 50  0000 L CNN
+F 2 "" H 7000 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7000 3900 50  0001 C CNN
+	3    7000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E8757D5
+P 6475 4975
+F 0 "C?" H 6590 5021 50  0000 L CNN
+F 1 "C" H 6590 4930 50  0000 L CNN
+F 2 "" H 6513 4825 50  0001 C CNN
+F 3 "~" H 6475 4975 50  0001 C CNN
+	1    6475 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E8757DB
+P 7425 3875
+F 0 "C?" H 7540 3921 50  0000 L CNN
+F 1 "C" H 7540 3830 50  0000 L CNN
+F 2 "" H 7463 3725 50  0001 C CNN
+F 3 "~" H 7425 3875 50  0001 C CNN
+	1    7425 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7425 3725 7425 3575
+Wire Wire Line
+	7425 3575 6900 3575
+Connection ~ 6900 3575
+Wire Wire Line
+	6900 3575 6900 3250
+Wire Wire Line
+	6475 4825 6475 4250
+Wire Wire Line
+	6475 4250 6900 4250
+Connection ~ 6900 4250
+Wire Wire Line
+	6900 4250 6900 4525
+Wire Wire Line
+	6475 5125 6475 5350
+Wire Wire Line
+	6475 5350 6925 5350
+Wire Wire Line
+	7425 5350 7425 4025
+Wire Wire Line
+	6925 5350 6925 5500
+Connection ~ 6925 5350
+Wire Wire Line
+	6925 5350 7425 5350
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E8757EF
+P 6925 5500
+F 0 "#PWR?" H 6925 5250 50  0001 C CNN
+F 1 "GNDS" H 6930 5327 50  0000 C CNN
+F 2 "" H 6925 5500 50  0001 C CNN
+F 3 "" H 6925 5500 50  0001 C CNN
+	1    6925 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 3600 8450 3575
+Wire Wire Line
+	8450 4200 8450 4250
+$Comp
+L Amplifier_Operational:TL072 U?
+U 3 1 5E875803
+P 8550 3900
+F 0 "U?" H 8508 3946 50  0000 L CNN
+F 1 "TL072" H 8508 3855 50  0000 L CNN
+F 2 "" H 8550 3900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8550 3900 50  0001 C CNN
+	3    8550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E875809
+P 8025 4975
+F 0 "C?" H 8140 5021 50  0000 L CNN
+F 1 "C" H 8140 4930 50  0000 L CNN
+F 2 "" H 8063 4825 50  0001 C CNN
+F 3 "~" H 8025 4975 50  0001 C CNN
+	1    8025 4975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E87580F
+P 8975 3875
+F 0 "C?" H 9090 3921 50  0000 L CNN
+F 1 "C" H 9090 3830 50  0000 L CNN
+F 2 "" H 9013 3725 50  0001 C CNN
+F 3 "~" H 8975 3875 50  0001 C CNN
+	1    8975 3875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8975 3725 8975 3575
+Wire Wire Line
+	8975 3575 8450 3575
+Connection ~ 8450 3575
+Wire Wire Line
+	8450 3575 8450 3275
+Wire Wire Line
+	8025 4825 8025 4250
+Wire Wire Line
+	8025 4250 8450 4250
+Connection ~ 8450 4250
+Wire Wire Line
+	8450 4250 8450 4525
+Wire Wire Line
+	8025 5125 8025 5350
+Wire Wire Line
+	8025 5350 8475 5350
+Wire Wire Line
+	8975 5350 8975 4025
+Wire Wire Line
+	8475 5350 8475 5500
+Connection ~ 8475 5350
+Wire Wire Line
+	8475 5350 8975 5350
+$Comp
+L power:GNDS #PWR?
+U 1 1 5E875823
+P 8475 5500
+F 0 "#PWR?" H 8475 5250 50  0001 C CNN
+F 1 "GNDS" H 8480 5327 50  0000 C CNN
+F 2 "" H 8475 5500 50  0001 C CNN
+F 3 "" H 8475 5500 50  0001 C CNN
+	1    8475 5500
+	1    0    0    -1  
+$EndComp
+Text HLabel 1575 3800 0    50   Input ~ 0
+VIN
+Wire Wire Line
+	1575 3800 1725 3800
+Text HLabel 9725 1975 2    50   Input ~ 0
++9V
+Text HLabel 9725 2325 2    50   Input ~ 0
+-9V
+Wire Wire Line
+	9725 2325 8875 2325
+Wire Wire Line
+	9725 1975 8875 1975
+Text Label 8875 1975 0    50   ~ 0
++9V
+Text Label 8875 2325 0    50   ~ 0
+-9V
+Text Label 4425 3275 0    50   ~ 0
++9V
+Text Label 6900 3250 0    50   ~ 0
++9V
+Text Label 8450 3275 0    50   ~ 0
++9V
+Text Label 8450 4525 0    50   ~ 0
+-9V
+Text Label 6900 4525 0    50   ~ 0
+-9V
+Text Label 4425 4425 0    50   ~ 0
+-9V
+$EndSCHEMATC
