@@ -1,0 +1,7 @@
+(fp_lib_table
+  (lib (name RecomR2D)(type KiCad)(uri ${KIPRJMOD}/../KicadLibrary/footprint/PWR/DC-DC/ISOLATED/RecomR2D.pretty)(options "")(descr ""))
+  (lib (name RecomRS6)(type KiCad)(uri ${KIPRJMOD}/../KicadLibrary/footprint/PWR/DC-DC/ISOLATED/RecomRS6.pretty)(options "")(descr ""))
+  (lib (name NeutrikNMJ)(type KiCad)(uri ${KIPRJMOD}/../KicadLibrary/footprint/CONNECTORS/AUDIO/NeutrikNMJ.pretty)(options "")(descr ""))
+  (lib (name NeutrikNRJ)(type KiCad)(uri ${KIPRJMOD}/../KicadLibrary/footprint/CONNECTORS/AUDIO/NeutrikNRJ.pretty)(options "")(descr ""))
+  (lib (name Hammond1590)(type KiCad)(uri ${KIPRJMOD}/../KicadLibrary/footprint/ENCLOSURES/HAMMOND/Hammond1590.pretty)(options "")(descr ""))
+)

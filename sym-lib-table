@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name barrel_jack)(type Legacy)(uri ${KIPRJMOD}/lib/barrel_jack.lib)(options "")(descr ""))
-  (lib (name socket_custom)(type Legacy)(uri ${KIPRJMOD}/lib/socket_custom.lib)(options "")(descr ""))
-  (lib (name pot_numbered)(type Legacy)(uri ${KIPRJMOD}/lib/pot_numbered.lib)(options "")(descr ""))
+  (lib (name RecomRS6)(type Legacy)(uri ${KIPRJMOD}/../KicadLibrary/symbol/PWR/DC-DC/ISOLATED/RecomRS6.lib)(options "")(descr ""))
+  (lib (name RecomRKZE)(type Legacy)(uri ${KIPRJMOD}/../KicadLibrary/symbol/PWR/DC-DC/ISOLATED/RecomRKZE.lib)(options "")(descr ""))
+  (lib (name MonoJack2Switch)(type Legacy)(uri ${KIPRJMOD}/../KicadLibrary/symbol/CONNECTOR/AUDIO/MonoJack2Switch.lib)(options "")(descr ""))
 )
