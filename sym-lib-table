@@ -2,4 +2,5 @@
   (lib (name RecomRS6)(type Legacy)(uri ${KIPRJMOD}/../KicadLibrary/symbol/PWR/DC-DC/ISOLATED/RecomRS6.lib)(options "")(descr ""))
   (lib (name RecomRKZE)(type Legacy)(uri ${KIPRJMOD}/../KicadLibrary/symbol/PWR/DC-DC/ISOLATED/RecomRKZE.lib)(options "")(descr ""))
   (lib (name MonoJack2Switch)(type Legacy)(uri ${KIPRJMOD}/../KicadLibrary/symbol/CONNECTOR/AUDIO/MonoJack2Switch.lib)(options "")(descr ""))
+  (lib (name DG46x)(type Legacy)(uri ${KIPRJMOD}/../KicadLibrary/symbol/LOGIC/DG46x.lib)(options "")(descr ""))
 )
