@@ -14,19 +14,9 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Wire Wire Line
-	2075 3175 2325 3175
-Wire Wire Line
-	2325 2975 2325 3075
-Wire Wire Line
-	21050 3225 20750 3225
-Wire Wire Line
-	20750 3025 20750 3125
-Wire Wire Line
 	21050 3025 20750 3025
-Connection ~ 20750 3225
 Wire Wire Line
 	2075 2975 2325 2975
-Connection ~ 2325 3175
 Wire Wire Line
 	2075 2875 2850 2875
 Wire Wire Line
@@ -1097,8 +1087,6 @@ F 3 "" H 20750 3500 50  0001 C CNN
 	1    20750 3500
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	20750 3225 20750 3500
 $Comp
 L power:VCOM #PWR?
 U 1 1 5E979CD1
@@ -1127,8 +1115,6 @@ F 3 "" H 2325 4200 50  0001 C CNN
 	1    2325 4200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2325 3175 2325 4200
 $Comp
 L power:VCOM #PWR?
 U 1 1 5E9A6B29
@@ -1327,49 +1313,6 @@ F 3 "~" H 7300 13785 50  0001 C CNN
 	1    7250 13825
 	1    0    0    1   
 $EndComp
-$Comp
-L MonoJack2Switch:MonoJack2Switch J1
-U 1 1 5EC43823
-P 1625 3025
-F 0 "J1" H 1720 3400 50  0000 C CNN
-F 1 "NRJ6HM-1-PRE" H 1720 3309 50  0000 C CNN
-F 2 "NeutrikNRJ:NRJxHx" H 1625 3075 50  0001 C CNN
-F 3 "https://www.neutrik.com/media/8570/download/nrj6hm-1-pre-1.pdf?v=1" H 1625 3075 50  0001 C CNN
-	1    1625 3025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2075 3075 2325 3075
-Connection ~ 2325 3075
-Wire Wire Line
-	2325 3075 2325 3175
-$Comp
-L Device:R_POT RV1
-U 1 1 5EC53DEC
-P 7300 3625
-F 0 "RV1" V 7093 3625 50  0000 C CNN
-F 1 "B10K" V 7184 3625 50  0000 C CNN
-F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 7300 3625 50  0001 C CNN
-F 3 "~" H 7300 3625 50  0001 C CNN
-	1    7300 3625
-	0    1    1    0   
-$EndComp
-$Comp
-L MonoJack2Switch:MonoJack2Switch J4
-U 1 1 5EC74257
-P 21500 3075
-F 0 "J4" H 21800 3475 50  0000 R CNN
-F 1 "NRJ6HM-1-PRE" H 21875 3350 50  0000 R CNN
-F 2 "NeutrikNRJ:NRJxHx" H 21500 3125 50  0001 C CNN
-F 3 "https://www.neutrik.com/media/8570/download/nrj6hm-1-pre-1.pdf?v=1" H 21500 3125 50  0001 C CNN
-	1    21500 3075
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	21050 3125 20750 3125
-Connection ~ 20750 3125
-Wire Wire Line
-	20750 3125 20750 3225
 $Comp
 L Amplifier_Operational:TL074 U1
 U 1 1 5ED52AE2
@@ -1669,23 +1612,12 @@ Wire Wire Line
 Wire Wire Line
 	13050 9250 14675 9250
 $Comp
-L Device:LED D5
-U 1 1 5ED736CE
-P 20775 10325
-F 0 "D5" H 20768 10070 50  0000 C CNN
-F 1 "LED" H 20768 10161 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB_Wide_Pins" H 20775 10325 50  0001 C CNN
-F 3 "~" H 20775 10325 50  0001 C CNN
-	1    20775 10325
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:LED D6
 U 1 1 5ED7398C
 P 20775 11650
 F 0 "D6" H 20768 11395 50  0000 C CNN
 F 1 "LED" H 20768 11486 50  0000 C CNN
-F 2 "LED_THT:LED_D5.0mm-4_RGB_Wide_Pins" H 20775 11650 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 20775 11650 50  0001 C CNN
 F 3 "~" H 20775 11650 50  0001 C CNN
 	1    20775 11650
 	-1   0    0    1   
@@ -1760,4 +1692,72 @@ Wire Wire Line
 	17225 11750 17225 8075
 Wire Wire Line
 	14675 11750 17225 11750
+$Comp
+L Device:R_POT RV1
+U 1 1 5EC53DEC
+P 7300 3625
+F 0 "RV1" V 7093 3625 50  0000 C CNN
+F 1 "B10K" V 7184 3625 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_PTV09A-1_Single_Vertical" H 7300 3625 50  0001 C CNN
+F 3 "~" H 7300 3625 50  0001 C CNN
+	1    7300 3625
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2325 2975 2325 3075
+Connection ~ 2325 3075
+Wire Wire Line
+	2075 3075 2325 3075
+Wire Wire Line
+	2325 3075 2325 3175
+Wire Wire Line
+	2325 3175 2325 4200
+Connection ~ 2325 3175
+Wire Wire Line
+	2075 3175 2325 3175
+$Comp
+L MonoJack2Switch:MonoJack2Switch J1
+U 1 1 5EC43823
+P 1625 3025
+F 0 "J1" H 1720 3400 50  0000 C CNN
+F 1 "NRJ6HM-1-PRE" H 1720 3309 50  0000 C CNN
+F 2 "NeutrikNRJ:NRJxHx" H 1625 3075 50  0001 C CNN
+F 3 "https://www.neutrik.com/media/8570/download/nrj6hm-1-pre-1.pdf?v=1" H 1625 3075 50  0001 C CNN
+	1    1625 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	20750 3025 20750 3125
+Connection ~ 20750 3125
+Wire Wire Line
+	21050 3125 20750 3125
+Wire Wire Line
+	20750 3125 20750 3225
+Wire Wire Line
+	20750 3225 20750 3500
+Connection ~ 20750 3225
+Wire Wire Line
+	21050 3225 20750 3225
+$Comp
+L MonoJack2Switch:MonoJack2Switch J4
+U 1 1 5EC74257
+P 21500 3075
+F 0 "J4" H 21800 3475 50  0000 R CNN
+F 1 "NRJ6HM-1-PRE" H 21875 3350 50  0000 R CNN
+F 2 "NeutrikNRJ:NRJxHx" H 21500 3125 50  0001 C CNN
+F 3 "https://www.neutrik.com/media/8570/download/nrj6hm-1-pre-1.pdf?v=1" H 21500 3125 50  0001 C CNN
+	1    21500 3075
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 5ED736CE
+P 20775 10325
+F 0 "D5" H 20768 10070 50  0000 C CNN
+F 1 "LED" H 20768 10161 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 20775 10325 50  0001 C CNN
+F 3 "~" H 20775 10325 50  0001 C CNN
+	1    20775 10325
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
